@@ -3,7 +3,7 @@ import light from "../assets/bg-desktop-light.jpg";
 import "./ThemeHead.css";
 import moon from "../assets/icon-moon.svg";
 
-function LightThemeHead() {
+function LightThemeHead({ changeTheme }) {
   return (
     <div className="light-head">
       <img
@@ -14,7 +14,7 @@ function LightThemeHead() {
       <div className="light-content">
         <div className="heading">
           <span>T O D O </span>
-          <img src={moon} alt="moon" />
+          <img src={moon} alt="moon" onClick={changeTheme} />
         </div>
       </div>
     </div>

@@ -38,3 +38,6 @@
   width: 40px;
   height: auto;
 }
+.heading img:hover {
+  cursor: pointer;
+}
