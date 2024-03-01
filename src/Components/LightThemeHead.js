@@ -1,6 +1,7 @@
 import React from "react";
 import light from "../assets/bg-desktop-light.jpg";
-import "./LightThemeHead.css";
+import "./ThemeHead.css";
+import moon from "../assets/icon-moon.svg";
 
 function LightThemeHead() {
   return (
@@ -10,7 +11,12 @@ function LightThemeHead() {
         src={light}
         alt="light theme background"
       />
-      <div className="light-content"></div>
+      <div className="light-content">
+        <div className="heading">
+          <span>T O D O </span>
+          <img src={moon} alt="moon" />
+        </div>
+      </div>
     </div>
   );
 }
