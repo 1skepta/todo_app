@@ -13,7 +13,6 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  z-index: -1;
 }
 .light-content,
 .dark-content {
@@ -35,9 +34,24 @@
   color: white;
 }
 .heading img {
-  width: 40px;
-  height: auto;
+  padding-top: 50px;
+  width: 30px;
+  height: 30px;
 }
 .heading img:hover {
   cursor: pointer;
+}
+.dark-body {
+  height: 100vh;
+  background-color: #0d0d36;
+  z-index: -1;
+}
+.light-body {
+  height: 100vh;
+  background-color: white;
+  z-index: -1;
+}
+.addTodo{
+  /* background-color: white; */
+  background-color: white;
 }

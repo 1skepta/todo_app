@@ -4,7 +4,7 @@ import "./ThemeHead.css";
 import sun from "../assets/icon-sun.svg";
 
 function DarkThemeHead({ changeTheme }) {
-  return (
+  return (<div className="dark-body">
     <div className="dark-head">
       <img className="dark-background" src={dark} alt="dark theme background" />
       <div className="dark-content">
@@ -13,7 +13,7 @@ function DarkThemeHead({ changeTheme }) {
           <img src={sun} alt="sun" onClick={changeTheme} />
         </div>
       </div>
-    </div>
+    </div></div>
   );
 }
 
