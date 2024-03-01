@@ -2,7 +2,7 @@ import React from "react";
 import light from "../assets/bg-desktop-light.jpg";
 import "./ThemeHead.css";
 import moon from "../assets/icon-moon.svg";
-import checkicon from "../assets/icon-cross.svg";
+import Content from "./Content";
 
 function LightThemeHead({ changeTheme }) {
   return (
@@ -18,15 +18,8 @@ function LightThemeHead({ changeTheme }) {
             <span>T O D O </span>
             <img src={moon} alt="moon" onClick={changeTheme} />
           </div>
-
-
-          <div className="addTodo">
-            <div></div>
-            <input type="text" placeholder="Create a new todo..." />
-          </div>
-
-
         </div>
+        <Content />
       </div>
     </div>
   );

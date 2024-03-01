@@ -34,9 +34,9 @@
   color: white;
 }
 .heading img {
-  padding-top: 50px;
-  width: 30px;
-  height: 30px;
+  padding-top: 10px;
+  width: 25px;
+  height: 25px;
 }
 .heading img:hover {
   cursor: pointer;
@@ -48,10 +48,60 @@
 }
 .light-body {
   height: 100vh;
-  background-color: white;
+  background-color: #f5f5f5;
   z-index: -1;
 }
-.addTodo{
-  /* background-color: white; */
+.addTodo {
   background-color: white;
+  border-radius: 5px;
+  height: 65px;
+  justify-content: center;
+  position: absolute;
+  width: 37%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.listTodo {
+  background-color: white;
+  border-radius: 5px;
+  height: 65px;
+  justify-content: center;
+  position: absolute;
+  width: 37%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.listTodo div {
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+.O {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #333333;
+  opacity: 0.5;
+}
+.O:hover {
+  cursor: pointer;
+}
+.addTodo div {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+.addTodo input {
+  border: none;
+  outline: none;
+}
+.addTodo input::placeholder {
+  font-weight: bold;
 }
