@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./ThemeHead.css";
 import cross from "../assets/icon-cross.svg";
+import complete from "../assets/icon-check.svg";
 
 function Content() {
   const [todos, setTodos] = useState([
-    "Complete online javascript course",
-    "Jog around the park 3x",
-    "10 minutes meditation",
-    "Read for 1 hour",
-    "Pick up groceries",
+    { text: "Complete online javascript course", completed: false },
+    { text: "Jog around the park 3x", completed: false },
+    { text: "10 minutes meditation", completed: false },
+    { text: "Read for 1 hour", completed: false },
+    { text: "Pick up groceries", completed: false },
   ]);
   const [newTodo, setNewTodo] = useState("");
 
@@ -18,7 +19,7 @@ function Content() {
 
   const addTodo = () => {
     if (newTodo.trim() !== "") {
-      setTodos([...todos, newTodo]);
+      setTodos([...todos, { text: newTodo, completed: false }]);
       setNewTodo("");
     }
   };
@@ -32,6 +33,12 @@ function Content() {
   const removeTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
+  const toggleComplete = (index) => {
+    const newTodos = [...todos];
+    newTodos[index].completed = !newTodos[index].completed;
     setTodos(newTodos);
   };
 
@@ -52,8 +59,20 @@ function Content() {
       <div className="listTodo">
         {todos.map((todo, index) => (
           <div className="items" key={index}>
-            <span className="O o"></span>
-            <span className="text">{todo}</span>
+            {todo.completed ? (
+              <img
+                className="complete"
+                src={complete}
+                alt="complete"
+                onClick={() => toggleComplete(index)}
+              />
+            ) : (
+              <span
+                className="O o"
+                onClick={() => toggleComplete(index)}
+              ></span>
+            )}
+            <span className="text">{todo.text}</span>
             <img
               className="cross"
               src={cross}
@@ -64,7 +83,9 @@ function Content() {
         ))}
         <div className="actions">
           <div className="one">
-            <span>{todos.length} items left</span>
+            <span>
+              {todos.filter((todo) => !todo.completed).length} items left
+            </span>
           </div>
           <div className="two">
             <span>All</span>

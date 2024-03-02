@@ -75,6 +75,7 @@
   padding-top: 10px;
   max-height: 299px;
   overflow-y: auto;
+  height: 298px;
 }
 
 .items {
@@ -117,9 +118,7 @@
   color: #666666;
   padding-left: 17px;
 }
-.text:hover + .cross {
-  visibility: visible;
-}
+
 .O {
   width: 15px;
   height: 15px;
@@ -132,13 +131,25 @@
   margin-left: 20px;
   margin-bottom: 15px;
 }
+.complete {
+  width: 15px;
+  height: 15px;
+  display: none;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.items.completed .complete {
+  display: inline-block;
+}
+.items.completed .text {
+  text-decoration: line-through;
+}
 .cross {
   width: 15px;
   height: 15px;
   padding-top: 2px;
   margin-left: auto;
   margin-right: 30px;
-  visibility: hidden;
 }
 .O:hover {
   cursor: pointer;
