@@ -58,7 +58,7 @@
   justify-content: center;
   position: absolute;
   width: 37%;
-  top: 75%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -68,11 +68,13 @@
   justify-content: center;
   position: absolute;
   width: 37%;
-  top: 145%;
+  top: 135%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 10px;
   padding-top: 10px;
+  max-height: 299px;
+  overflow-y: auto;
 }
 
 .items {
@@ -143,14 +145,15 @@
 }
 .addTodo div {
   display: flex;
-  width: 200px;
-  justify-content: space-between;
+  width: 100%;
   padding-top: 25px;
   padding-left: 20px;
 }
 .addTodo input {
   border: none;
   outline: none;
+  margin-left: 15px;
+  width: 500px;
 }
 .addTodo input::placeholder {
   font-weight: bold;
