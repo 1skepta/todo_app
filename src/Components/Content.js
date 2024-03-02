@@ -1,5 +1,6 @@
 import React from "react";
 import "./ThemeHead.css";
+import cross from "../assets/icon-cross.svg";
 
 function Content() {
   return (
@@ -14,22 +15,27 @@ function Content() {
         <div className="items">
           <span className="O o"></span>
           <span className="text">Complete online javascript course</span>
+          <img className="cross" src={cross} alt="cross" />
         </div>
         <div className="items">
           <span className="O o"></span>
           <span className="text">Jog around the park 3x</span>
+          <img className="cross" src={cross} alt="cross" />
         </div>
         <div className="items">
           <span className="O o"></span>
           <span className="text">10 minutes meditation</span>
+          <img className="cross" src={cross} alt="cross" />
         </div>
         <div className="items">
           <span className="O o"></span>
           <span className="text">Read for 1 hour</span>
+          <img className="cross" src={cross} alt="cross" />
         </div>
         <div className="items">
           <span className="O o"></span>
           <span className="text">Pick up groceries</span>
+          <img className="cross" src={cross} alt="cross" />
         </div>
 
         <div className="actions">
