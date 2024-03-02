@@ -65,20 +65,27 @@
 .listTodo {
   background-color: white;
   border-radius: 5px;
-  height: 65px;
   justify-content: center;
   position: absolute;
   width: 37%;
-  top: 100%;
+  top: 140%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .listTodo div {
   display: flex;
-  width: 270px;
-  justify-content: space-between;
-  padding-top: 25px;
-  padding-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.text {
+  font-size: small;
+  font-weight: bold;
+  color: #666666;
+  padding-left: 17px;
 }
 .O {
   width: 15px;
@@ -87,6 +94,10 @@
   border-radius: 50%;
   border: 1px solid #333333;
   opacity: 0.5;
+}
+.o {
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 .O:hover {
   cursor: pointer;
