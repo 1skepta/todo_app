@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import LightThemeHead from "./Components/LightThemeHead";
 import DarkThemeHead from "./Components/DarkThemeHead";
+import Content from "./Components/Content";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -13,9 +14,13 @@ function App() {
   return (
     <div className="App">
       {theme === "light" ? (
-        <LightThemeHead changeTheme={changeTheme} />
+        <LightThemeHead changeTheme={changeTheme}>
+          <Content />
+        </LightThemeHead>
       ) : (
-        <DarkThemeHead changeTheme={changeTheme} />
+        <DarkThemeHead changeTheme={changeTheme}>
+          <Content />
+        </DarkThemeHead>
       )}
     </div>
   );

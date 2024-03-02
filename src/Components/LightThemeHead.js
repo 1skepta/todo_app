@@ -2,9 +2,8 @@ import React from "react";
 import light from "../assets/bg-desktop-light.jpg";
 import "./ThemeHead.css";
 import moon from "../assets/icon-moon.svg";
-import Content from "./Content";
 
-function LightThemeHead({ changeTheme }) {
+function LightThemeHead({ changeTheme, children }) {
   return (
     <div className="light-body">
       <div className="light-head">
@@ -19,7 +18,7 @@ function LightThemeHead({ changeTheme }) {
             <img src={moon} alt="moon" onClick={changeTheme} />
           </div>
         </div>
-        <Content />
+      {children}
       </div>
     </div>
   );

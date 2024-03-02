@@ -3,7 +3,7 @@ import dark from "../assets/bg-desktop-dark.jpg";
 import "./ThemeHead.css";
 import sun from "../assets/icon-sun.svg";
 
-function DarkThemeHead({ changeTheme }) {
+function DarkThemeHead({ changeTheme, children }) {
   return (
     <div className="dark-body">
       <div className="dark-head">
@@ -18,6 +18,7 @@ function DarkThemeHead({ changeTheme }) {
             <img src={sun} alt="sun" onClick={changeTheme} />
           </div>
         </div>
+        {children}
       </div>
     </div>
   );
