@@ -87,11 +87,7 @@ function Content() {
               {todos.filter((todo) => !todo.completed).length} items left
             </span>
           </div>
-          <div className="two">
-            <span>All</span>
-            <span>Active</span>
-            <span>Completed</span>
-          </div>
+
           <div className="three">
             <span>Clear Completed</span>
           </div>
