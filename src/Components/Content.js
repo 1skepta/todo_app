@@ -42,6 +42,11 @@ function Content() {
     setTodos(newTodos);
   };
 
+  const clearCompleted = () => {
+    const newTodos = todos.filter((todo) => !todo.completed);
+    setTodos(newTodos);
+  };
+
   return (
     <div className="container">
       <div className="addTodo">
@@ -89,7 +94,7 @@ function Content() {
           </div>
 
           <div className="three">
-            <span>Clear Completed</span>
+            <span onClick={clearCompleted}>Clear Completed</span>
           </div>
         </div>
       </div>
