@@ -22,4 +22,4 @@ This project is as every project licensed under [MIT](LICENSE).
 
 ## Contributions
 
-I am facing challenges on my toggling between dark and light mode, Send a PR to contribute. 
+I am facing challenges on my toggling between dark and light mode, Send a PR to contribute.
