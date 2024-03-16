@@ -14,7 +14,7 @@ I'mma keep you in touch right
 
 ## UI
 
-![image](./src/final/Capture.PNG)
+![image](./src/final/shot.PNG)
 
 ## License
 
@@ -27,4 +27,5 @@ just send a PR for improvements or fixes!!!
 ## Known Issues
 
 - Toggling between day and night mode.
+
 When you choose night mode, the background colors change but the background color of the text also has to change which i am facing difficulties with.
