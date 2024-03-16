@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./ThemeHead.css";
-import cross from "../assets/icon-cross.svg";
-import complete from "../assets/icon-check.svg";
+import "../ThemeHead/ThemeHead.css";
+import cross from "../../assets/icon-cross.svg";
+import complete from "../../assets/icon-check.svg";
 
 function Content() {
   const [todos, setTodos] = useState([

@@ -1,7 +1,7 @@
 import React from "react";
-import dark from "../assets/bg-desktop-dark.jpg";
+import dark from "../../assets/bg-desktop-dark.jpg";
 import "./ThemeHead.css";
-import sun from "../assets/icon-sun.svg";
+import sun from "../../assets/icon-sun.svg";
 
 function DarkThemeHead({ changeTheme, children }) {
   return (

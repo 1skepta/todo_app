@@ -14,7 +14,7 @@ I'mma keep you in touch right
 
 ## UI
 
-![image](./final/Capture.PNG)
+![image](./src/final/Capture.PNG)
 
 ## License
 
