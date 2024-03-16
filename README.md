@@ -26,4 +26,5 @@ just send a PR for improvements or fixes!!!
 
 ## Known Issues
 
-- I'm having issues between toggling between day and night mode.
+- Toggling between day and night mode.
+When you choose night mode, the background colors change but the background color of the text also has to change which i am facing difficulties with.
