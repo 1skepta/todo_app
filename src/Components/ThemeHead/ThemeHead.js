@@ -7,7 +7,7 @@ import dark from "../../assets/bg-desktop-dark.jpg";
 
 function ThemeHead({ isDarkMode, toggleMode, children }) {
   return (
-    <div className="body">
+    <div className={isDarkMode ? "lightbg body" : "darkbg body"}>
       <div className="head">
         <img
           className="background"
