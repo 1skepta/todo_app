@@ -3,7 +3,7 @@ import "../Style/Style.css";
 import cross from "../../assets/icon-cross.svg";
 import complete from "../../assets/icon-check.svg";
 
-function Content() {
+function Content({ isDarkMode }) {
   const [todos, setTodos] = useState([
     { text: "Complete online javascript course", completed: false },
     { text: "Jog around the park 3x", completed: false },
@@ -49,10 +49,11 @@ function Content() {
 
   return (
     <div className="container">
-      <div className="addTodo">
+      <div className={isDarkMode ? "addTodo" : "dark addTodo"}>
         <div>
-          <span className="O"></span>
+          <span className={isDarkMode ? "O" : "black O"}></span>
           <input
+            className={isDarkMode ? "write" : "dark"}
             type="text"
             placeholder="Create a new todo..."
             value={newTodo}
@@ -61,7 +62,7 @@ function Content() {
           />
         </div>
       </div>
-      <div className="listTodo">
+      <div className={isDarkMode ? "light listTodo" : "dark listTodo"}>
         {todos.map((todo, index) => (
           <div className="items" key={index}>
             {todo.completed ? (
@@ -77,7 +78,9 @@ function Content() {
                 onClick={() => toggleComplete(index)}
               ></span>
             )}
-            <span className="text">{todo.text}</span>
+            <span className={isDarkMode ? "lights text" : "dark text"}>
+              {todo.text}
+            </span>
             <img
               className="cross"
               src={cross}
@@ -87,13 +90,13 @@ function Content() {
           </div>
         ))}
         <div className="actions">
-          <div className="one">
+          <div className={isDarkMode ? "lightss one" : "dark one"}>
             <span>
               {todos.filter((todo) => !todo.completed).length} items left
             </span>
           </div>
 
-          <div className="three">
+          <div className={isDarkMode ? "lightss three" : "dark three"}>
             <span onClick={clearCompleted}>Clear Completed</span>
           </div>
         </div>
