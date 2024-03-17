@@ -1,27 +1,20 @@
 import React, { useState } from "react";
 import "./App.css";
-import LightThemeHead from "./Components/ThemeHead/LightThemeHead";
-import DarkThemeHead from "./Components/ThemeHead/DarkThemeHead";
+import ThemeHead from "./Components/ThemeHead/ThemeHead";
 import Content from "./Components/Content/Content";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [isDarkMode, setIsDarkMode] = useState("true");
 
-  const changeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+  const toggleMode = () => {
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
     <div className="App">
-      {theme === "light" ? (
-        <LightThemeHead changeTheme={changeTheme}>
-          <Content />
-        </LightThemeHead>
-      ) : (
-        <DarkThemeHead changeTheme={changeTheme}>
-          <Content />
-        </DarkThemeHead>
-      )}
+      <ThemeHead isDarkMode={isDarkMode} toggleMode={toggleMode}>
+        <Content isDarkMode={isDarkMode} />
+      </ThemeHead>
     </div>
   );
 }

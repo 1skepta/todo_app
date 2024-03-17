@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../ThemeHead/ThemeHead.css";
+import "../Style/Style.css";
 import cross from "../../assets/icon-cross.svg";
 import complete from "../../assets/icon-check.svg";
 
