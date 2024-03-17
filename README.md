@@ -6,7 +6,7 @@ As part of the projects i am doing to broaden my js and react skills, i picked t
 
 ## My Personal Experience About This Project
 
-I'mma keep you in touch right
+This project enabled me to integrate dark and light mode functionalities into my code, enhancing its overall quality.
 
 ## Technologies Used
 
@@ -22,10 +22,4 @@ This project is as every project licensed under [MIT](LICENSE).
 
 ## Contributions
 
-just send a PR for improvements or fixes!!!
-
-## Known Issues
-
-- Toggling between day and night mode.
-
-When you choose night mode, the background colors change but the background color of the text also has to change which i am facing difficulties with.
+just send a PR for improvements!!!
